@@ -31,8 +31,7 @@ The easiest way to get FinSmart AI running is via Docker Compose.
 
 1.  **Clone the Repository**
     ```bash
-    git clone https://github.com/your-username/finsmart-ai.git
-    cd finsmart-ai
+    git clone https://github.com/Gagan2004/AI_FINANCIAL_ADVISOR
     ```
 
 2.  **Configure Environment Variables**
