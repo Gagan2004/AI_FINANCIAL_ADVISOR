@@ -45,7 +45,7 @@ export default function Dashboard() {
   const [isTyping, setIsTyping] = useState(false);
   const [aiProvider, setAiProvider] = useState<'gemini' | 'ollama'>('gemini');
   const [activeTab, setActiveTab] = useState('Overview');
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
   const [user, setUser] = useState<{email: string, full_name: string} | null>(null);
   const [messages, setMessages] = useState([
     { role: 'assistant', text: "Hello! I'm your FinSmart AI advisor. Ask me anything about your finances!", time: new Date() }
