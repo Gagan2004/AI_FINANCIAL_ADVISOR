@@ -1,7 +1,7 @@
 import os
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_community.chat_models import ChatOllama
-from langchain.prompts import ChatPromptTemplate
+from langchain_ollama import ChatOllama
+from langchain_core.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -11,7 +11,7 @@ class AIService:
         # Gemini Init
         api_key = os.getenv("GOOGLE_API_KEY")
         self.gemini_llm = ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash",
+            model="gemini-2.5-flash",
             google_api_key=api_key,
             temperature=0.7,
             convert_system_message_to_human=True
